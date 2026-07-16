@@ -15,42 +15,42 @@
   // Four SVG flower shapes (as inline SVG strings)
   const shapes = [
     // 5-petal rounded flower
-    (c, s) => `<svg width="${s}" height="${s}" viewBox="0 0 40 40" fill="${c}" opacity="0.82" xmlns="http://www.w3.org/2000/svg">
+    (c, s) => `<svg width="${s}" height="${s}" viewBox="0 0 40 40" fill="${c}" opacity="0.65" xmlns="http://www.w3.org/2000/svg">
       <ellipse cx="20" cy="8"  rx="5" ry="9" transform="rotate(0   20 20)"/>
       <ellipse cx="20" cy="8"  rx="5" ry="9" transform="rotate(72  20 20)"/>
       <ellipse cx="20" cy="8"  rx="5" ry="9" transform="rotate(144 20 20)"/>
       <ellipse cx="20" cy="8"  rx="5" ry="9" transform="rotate(216 20 20)"/>
       <ellipse cx="20" cy="8"  rx="5" ry="9" transform="rotate(288 20 20)"/>
-      <circle  cx="20" cy="20" r="5" fill="${c}" opacity="1"/>
+      <circle  cx="20" cy="20" r="5" fill="${c}" opacity="0.8"/>
     </svg>`,
 
     // 6-petal daisy
-    (c, s) => `<svg width="${s}" height="${s}" viewBox="0 0 40 40" fill="${c}" opacity="0.75" xmlns="http://www.w3.org/2000/svg">
+    (c, s) => `<svg width="${s}" height="${s}" viewBox="0 0 40 40" fill="${c}" opacity="0.6" xmlns="http://www.w3.org/2000/svg">
       <ellipse cx="20" cy="7"  rx="4" ry="8" transform="rotate(0   20 20)"/>
       <ellipse cx="20" cy="7"  rx="4" ry="8" transform="rotate(60  20 20)"/>
       <ellipse cx="20" cy="7"  rx="4" ry="8" transform="rotate(120 20 20)"/>
       <ellipse cx="20" cy="7"  rx="4" ry="8" transform="rotate(180 20 20)"/>
       <ellipse cx="20" cy="7"  rx="4" ry="8" transform="rotate(240 20 20)"/>
       <ellipse cx="20" cy="7"  rx="4" ry="8" transform="rotate(300 20 20)"/>
-      <circle  cx="20" cy="20" r="4.5" fill="${c}" opacity="1"/>
+      <circle  cx="20" cy="20" r="4.5" fill="${c}" opacity="0.8"/>
     </svg>`,
 
     // Single petal / leaf shape
-    (c, s) => `<svg width="${s}" height="${s}" viewBox="0 0 40 40" fill="${c}" opacity="0.7" xmlns="http://www.w3.org/2000/svg">
+    (c, s) => `<svg width="${s}" height="${s}" viewBox="0 0 40 40" fill="${c}" opacity="0.55" xmlns="http://www.w3.org/2000/svg">
       <path d="M20 4 C 28 12, 28 28, 20 36 C 12 28, 12 12, 20 4 Z"/>
     </svg>`,
 
     // 4-petal sakura style
-    (c, s) => `<svg width="${s}" height="${s}" viewBox="0 0 40 40" fill="${c}" opacity="0.78" xmlns="http://www.w3.org/2000/svg">
+    (c, s) => `<svg width="${s}" height="${s}" viewBox="0 0 40 40" fill="${c}" opacity="0.6" xmlns="http://www.w3.org/2000/svg">
       <ellipse cx="20" cy="8"  rx="5.5" ry="10" transform="rotate(0   20 20)"/>
       <ellipse cx="20" cy="8"  rx="5.5" ry="10" transform="rotate(90  20 20)"/>
       <ellipse cx="20" cy="8"  rx="5.5" ry="10" transform="rotate(180 20 20)"/>
       <ellipse cx="20" cy="8"  rx="5.5" ry="10" transform="rotate(270 20 20)"/>
-      <circle  cx="20" cy="20" r="4" fill="${c}" opacity="0.9"/>
+      <circle  cx="20" cy="20" r="4" fill="${c}" opacity="0.75"/>
     </svg>`,
   ];
 
-  const TOTAL = 22;  // number of flowers in the pool
+  const TOTAL = 10;  // number of flowers in the pool
   const rnd = (a, b) => Math.random() * (b - a) + a;
   const pick = arr => arr[Math.floor(Math.random() * arr.length)];
 
